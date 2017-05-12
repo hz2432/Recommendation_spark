@@ -1,15 +1,8 @@
 #Spark Assignment 3
 
 
-This assignment is based on the 3rd chapter of the book - 'Advanced Big Data Analytics with Spark'. 
-You can find a copy of the book [here](https://drive.google.com/file/d/0B5BGwUuGBNtNQzByU0JwX29ycTQ/view). 
-
-In this assignment, you will be required to build a recommendation system using Spark and MLib using a dataset published by AudioScrobbler. 
+Build a recommendation system using Spark and MLib using a dataset published by AudioScrobbler. 
 This data is 500MB uncompressed and can be downloaded [here](http://www-etud.iro.umontreal.ca/~bergstrj/audioscrobbler_data.html).
-
-You can glance through the chapter and understand how to build the recommendation system. The chapter will walk you through Scala code;
-however; you are expected to code in Python. 
-Also, the instructions below will help you run this recommendation system on a single node. We will be releasing instructions on how to run a Spark cluster on AWS EMR soon.
 
 
 ##Setup
@@ -20,11 +13,6 @@ You will be using the same setup you used for the Spark mini homework. But, beca
 * Now when you ssh into the machine again, run this script using the command python spark_notebook.py. This will launch PySpark with IPython notebook. The server will be listening on port 8001.
 * Open your browser and enter the url http://localhost:8001. This will open Jupyter in your browser, following which you can create a notebook and run PySpark commands from it.
 
-
-##Loading the Data
-* After you have downloaded the AudioScrobbler data, copy-paste it into the vagrant folder locally. This will load the data in your VM at the location /vagrant.
-* To get this into your home directory in the VM, simply run the command cp -avr /vagrant/audio_data/ /home/vagrant/
-Now you can use this data in your notebook.
 
 ##Problem
 * Build a recommendation system in Python on the lines of the one described in chapter 3. You are required to use the same 
